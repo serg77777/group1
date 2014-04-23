@@ -1,0 +1,16 @@
+package lesson140403;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class EAgerMemoryConsumer {
+
+	public static void main(String[] args) {
+
+		List list = new LinkedList<>();
+
+		while (true) {
+			list.add(new long[10000]);
+		}
+	}
+}

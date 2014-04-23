@@ -1,0 +1,14 @@
+1
+2
+3
+qwerty
+exceptional events 
+call stack
+02/04/2014
+
+object
+	throwable
+		exception
+			RuntimeException
+				ArithmeticException
+		Error
