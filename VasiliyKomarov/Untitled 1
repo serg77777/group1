@@ -1,0 +1,15 @@
+   t = 30;
+   
+
+	stackDisplay(G g, topCard)
+
+
+	private int stackDisplay(Graphics g, Card aCard) {
+		int localy; //===0
+		if (aCard == null) {
+			return y;
+		}
+		localy = stackDisplay(g, aCard.link);
+		aCard.draw(g, x, localy);
+		return localy + 35;
+	}
