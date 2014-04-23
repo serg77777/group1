@@ -1,0 +1,12 @@
+Иструменты программиста JDK
+    http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+
+    HEAP - куча - динамическая память
+    
+    GC - Garbage collection
+    
+    Xms - x memory size
+    Xmx - max size
+    
+    
+    Reflection 

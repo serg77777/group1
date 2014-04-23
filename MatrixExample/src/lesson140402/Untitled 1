@@ -1,0 +1,14 @@
+checked
+Exceptions 
+
+unchecked
+Error 
+Runtime Exception
+
+
+Object
+    Throwable
+        Exception
+            RuntimeException
+                ArithmeticException
+        Error
