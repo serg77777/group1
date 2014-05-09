@@ -126,10 +126,13 @@ public class RobotControlPanel {
 		}
 		Class<? extends Robot> robotClass = robot.getClass();
 		Method[] methods = robotClass.getMethods();
-		// TODO: вместо имени метода искать по аннотации
 		for (Method method : methods) {
-			String name = method.getName();
-			if (name.equals(command)) {
+			RobotCommand commandAnnotation = method
+					.getAnnotation(RobotCommand.class);
+			if (commandAnnotation == null)
+				continue;
+			String annotationValue = commandAnnotation.command();
+			if (annotationValue.equals(command)) {
 				try {
 					method.invoke(robot, new Object[] {});
 					return;

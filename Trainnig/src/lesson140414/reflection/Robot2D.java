@@ -14,29 +14,34 @@ public class Robot2D implements Robot {
 	}
 
 	@Override
+	@RobotCommand(command = "forward")
 	public void forward() {
 
 		_y -= VY;
 	}
 
 	@Override
+	@RobotCommand(command = "backward")
 	public void backward() {
 
 		_y += VY;
 	}
 
 	@Override
+	@RobotCommand(command = "stop")
 	public void stop() {
 
 	}
 
 	@Override
+	@RobotCommand(command = "left")
 	public void left() {
 
 		_x -= VX;
 	}
 
 	@Override
+	@RobotCommand(command = "right")
 	public void right() {
 
 		_x += VX;
