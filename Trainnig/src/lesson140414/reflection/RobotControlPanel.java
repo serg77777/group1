@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import javax.swing.JFrame;
 
-public class BobotControlPanel {
+public class RobotControlPanel {
 
 	public interface CommandListener {
 
@@ -124,8 +124,9 @@ public class BobotControlPanel {
 		if (robot == null) {
 			throw new IllegalArgumentException("No robot!");
 		}
-		Class robotClass = robot.getClass();
+		Class<? extends Robot> robotClass = robot.getClass();
 		Method[] methods = robotClass.getMethods();
+		// TODO: вместо имени метода искать по аннотации
 		for (Method method : methods) {
 			String name = method.getName();
 			if (name.equals(command)) {
