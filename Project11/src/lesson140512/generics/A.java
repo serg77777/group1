@@ -20,4 +20,13 @@ public class A<T> {
 
 	}
 
+	
+	/*
+	 * E element
+	 * K key
+	 * N number
+	 * T type
+	 * V value
+	 * S, U, X
+	 */
 }
