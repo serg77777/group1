@@ -18,6 +18,9 @@ public class MyOwnStack<T> extends ArrayList<T> {
 	
 
 	public T top() {
+		if (super.isEmpty()){
+			return null;
+		}
 		return super.get(super.size() - 1);
 	}
 
